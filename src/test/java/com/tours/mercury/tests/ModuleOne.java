@@ -28,10 +28,10 @@ public class ModuleOne extends DriverLaunch {
 		driver.close();
 	}
 
-	@AfterMethod
+	/*@AfterMethod
 	public void afterMethod() {
 		
-	}
+	}*/
 
 	@Test
 	public void loginTest() {
