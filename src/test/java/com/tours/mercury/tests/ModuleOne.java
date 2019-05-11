@@ -1,6 +1,7 @@
 package com.tours.mercury.tests;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -23,14 +24,14 @@ public class ModuleOne extends DriverLaunch {
 	}
 
 	@AfterClass
-	public void afterClass() {
+	public void afterClassM() {
 		driver.close();
 	}
 
-	/*@AfterMethod
+	@AfterMethod
 	public void afterMethod() {
 		
-	}*/
+	}
 
 	@Test
 	public void loginTest() {
