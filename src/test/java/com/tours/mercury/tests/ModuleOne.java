@@ -1,7 +1,6 @@
 package com.tours.mercury.tests;
 
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -56,8 +55,8 @@ public class ModuleOne extends DriverLaunch {
 	}
 	
 	@DataProvider (name = "getData")
-	public void dataProviderMethod(){
-		
+	public Object[][] dataProviderMethod(){
+		return new Object[][] {{"username1", "password1"}, {"username2", "password2"}};
 	}
 
 }
