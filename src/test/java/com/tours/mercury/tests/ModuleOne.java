@@ -59,5 +59,9 @@ public class ModuleOne extends DriverLaunch {
 	public void dataProviderMethod(){
 		
 	}
+	@Test
+	public void testcase3() {
+		
+	}
 
 }
